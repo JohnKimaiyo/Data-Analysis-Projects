@@ -1,5 +1,5 @@
 
-/******  Return to SQL Projects Page  https://johnkimaiyo.vercel.app/Pages/SQL%20Projects/SQL.html     ******/
+ https://johnkimaiyo.vercel.app/Pages/SQL%20Projects/SQL.html  
 
 /****** Whats is the highest retail sale  ******/
 SELECT   MAX([RETAIL SALES])  AS_Highest_Retail_Sale
