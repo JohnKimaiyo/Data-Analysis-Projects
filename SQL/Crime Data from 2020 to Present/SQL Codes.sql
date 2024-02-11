@@ -13,3 +13,9 @@ FROM [City of Los Angeles  Crime Data ].[dbo].[Crime_Data_from_2020_to_Present$]
 /****** What is the Average Rape Victims ******/
 SELECT ROUND(AVG([Vict Age]), 0) AS Average_Rape_Victim_Age
 FROM [City of Los Angeles  Crime Data ].[dbo].[Crime_Data_from_2020_to_Present$]
+
+/****** What is the top five areas with highets number of rapes ******/
+SELECT TOP 5 [AREA NAME], SUM([Rpt Dist No]) As_Total_Number_Rapes
+FROM [City of Los Angeles  Crime Data ].[dbo].[Crime_Data_from_2020_to_Present$]
+GROUP BY [AREA NAME]
+ORDER BY As_Total_Number_Rapes;
