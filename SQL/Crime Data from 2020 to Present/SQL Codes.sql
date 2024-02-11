@@ -25,3 +25,9 @@ SELECT TOP 1 [Vict Sex] ,SUM([Rpt Dist No]) AS  Total_number_of_rapes
  FROM [City of Los Angeles  Crime Data ].[dbo].[Crime_Data_from_2020_to_Present$]
 GROUP BY [Vict Sex]
 ORDER BY Total_number_of_rapes DESC;
+
+/****** What top five premises where rape victims are the highest  ******/
+SELECT TOP 5  [Premis Desc] , SUM([Rpt Dist No]) AS Total_number_of_rapes
+FROM [City of Los Angeles  Crime Data ].[dbo].[Crime_Data_from_2020_to_Present$]
+GROUP BY [Premis Desc]
+ORDER BY Total_number_of_rapes DESC;
