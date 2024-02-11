@@ -1,3 +1,6 @@
+
+/******  Return to SQL Projects Page  https://johnkimaiyo.vercel.app/Pages/SQL%20Projects/SQL.html     ******/
+
 /****** Whats is the highest retail sale  ******/
 SELECT   MAX([RETAIL SALES])  AS_Highest_Retail_Sale
 FROM [Montgomery County of Maryland  Wine Sales].[dbo].['Warehouse_and_Retail_Sales (1)$']
@@ -6,7 +9,6 @@ FROM [Montgomery County of Maryland  Wine Sales].[dbo].['Warehouse_and_Retail_Sa
 SELECT   AVG([RETAIL SALES])  AS_Average_Retail_Sale
 FROM [Montgomery County of Maryland  Wine Sales].[dbo].['Warehouse_and_Retail_Sales (1)$']
 
-/******  Return to SQL Projects Page  https://johnkimaiyo.vercel.app/Pages/SQL%20Projects/SQL.html     ******/
 
 
 
