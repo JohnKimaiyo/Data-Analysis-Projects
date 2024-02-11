@@ -20,3 +20,9 @@ SELECT TOP 5  [ITEM TYPE] , SUM([RETAIL SALES]) As_Total_Retail_Sales
 FROM [Montgomery County of Maryland  Wine Sales].[dbo].['Warehouse_and_Retail_Sales (1)$']
 GROUP BY [ITEM TYPE]
 ORDER BY As_Total_Retail_Sales DESC;
+
+/****** What are the top 5 Item types that have the highest Warehouse  Sales  ******/
+SELECT TOP 5 [ITEM TYPE] , SUM([WAREHOUSE SALES])  AS_total_Warehouse_price
+FROM [Montgomery County of Maryland  Wine Sales].[dbo].['Warehouse_and_Retail_Sales (1)$']
+GROUP BY [ITEM TYPE]
+ORDER BY AS_total_Warehouse_price DESC;
