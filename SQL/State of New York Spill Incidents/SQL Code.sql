@@ -11,3 +11,11 @@ SELECT TOP 5   [Locality] ,SUM([Spill Number]) AS_Total_spilage
 FROM [State of New York  Spill Incidents].[dbo].['Spill_Incidents (1)$']
 GROUP BY [Locality]
 ORDER BY AS_Total_spilage DESC;
+
+
+/****** Whats is the  top 5 Counties with the highest spillage number of spilage ******/
+ 
+SELECT TOP 5  [County],  SUM([Spill Number]) As_Total_Spilage
+FROM [State of New York  Spill Incidents].[dbo].['Spill_Incidents (1)$']
+GROUP BY [County]
+ORDER BY As_Total_Spilage DESC;
