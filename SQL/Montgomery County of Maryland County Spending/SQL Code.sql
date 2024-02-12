@@ -17,3 +17,4 @@ SELECT TOP 5 [Department] , SUM([Amount]) AS_Total_Amount_Spent
 FROM [Montgomery County of Maryland  County Spending].[dbo].[County_Spending$]
 GROUP BY [Department]
 ORDER BY AS_Total_Amount_Spent DESC;
+
