@@ -13,8 +13,14 @@ FROM [State of California Infectious Diseases].[dbo].[odp_idb_2001_2022_ddg_comp
 GROUP BY [County]
 ORDER BY As_Total_Population DESC;
 
-/****** Waht are the top 5 average infectious disesease ******/
+/****** What are the top 5 average infectious disesease ******/
 SELECT TOP 5 [Disease], AVG([Population]) AS_Averge_Popluation
 FROM [State of California Infectious Diseases].[dbo].[odp_idb_2001_2022_ddg_compliant$]
 GROUP BY [Disease]
 ORDER BY AS_Averge_Popluation DESC;
+
+/****** What top 5  Year had the most infections ******/
+SELECT  TOP 5[Year] ,SUM([Population]) AS_Total_Popluation
+FROM [State of California Infectious Diseases].[dbo].[odp_idb_2001_2022_ddg_compliant$]
+GROUP BY [Year]
+ORDER BY AS_Total_Popluation DESC;
